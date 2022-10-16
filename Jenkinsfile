@@ -6,7 +6,7 @@ pipeline {
         KUBECONFIG_FILE = credentials('my-kubeconfig')
     }
     stages {
-        stage('Deploying application') {
+        stage('Deploying applications') {
             steps {
                 sh 'echo "Deploying Application"'
                 sh '''
